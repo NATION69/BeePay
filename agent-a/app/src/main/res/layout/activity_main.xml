@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:contentDescription="BeePay logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bee_logo" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/press_start_2p"
+            android:text="BeePay SMS Forwarder"
+            android:textColor="#FFF200"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="SMS permission: checking..."
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Ingest URL"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/agentUrlInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/press_start_2p"
+            android:hint="http://ip:8080/ingest"
+            android:inputType="textUri"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Control Chat URL"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/controlChatUrlInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/press_start_2p"
+            android:hint="http://ip:8080/control/chat"
+            android:inputType="textUri"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Control Routes URL"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/controlRoutesUrlInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/press_start_2p"
+            android:hint="http://ip:8080/control/routes"
+            android:inputType="textUri"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Shared Secret"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/sharedSecretInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/press_start_2p"
+            android:hint="agent ingest secret"
+            android:inputType="textPassword"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Control Secret"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/controlSecretInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/press_start_2p"
+            android:hint="optional control secret"
+            android:inputType="textPassword"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/deviceIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:hint="Device ID label"
+            android:inputType="text"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Allowed senders (one per line)"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/allowedSendersInput"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="@font/press_start_2p"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Blocked senders"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/blockedSendersInput"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:fontFamily="@font/press_start_2p"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Required keywords"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/requiredKeywordsInput"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:fontFamily="@font/press_start_2p"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <Switch
+            android:id="@+id/maskOtpSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Mask OTP before send"
+            android:textColor="#FFF200"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FFF200"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Save Settings"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="Control Chat"
+            android:textColor="#FFF200"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/chatLogText"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:background="#1AFFF200"
+            android:fontFamily="@font/press_start_2p"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:text="Agent ready.\nTry: route CIB to telegram"
+            android:textColor="#FFF200"
+            android:textSize="9sp" />
+
+        <EditText
+            android:id="@+id/chatInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/press_start_2p"
+            android:hint="Type command..."
+            android:inputType="text"
+            android:textColor="#FFF200"
+            android:textColorHint="#88FFF200"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sendChatButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFF200"
+                android:fontFamily="@font/press_start_2p"
+                android:text="Send"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/showRoutesButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFF200"
+                android:fontFamily="@font/press_start_2p"
+                android:text="Show Routes"
+                android:textColor="#000000"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

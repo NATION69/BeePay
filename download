@@ -1,0 +1,8 @@
+BeePay Download Link
+Updated: not generated yet
+
+Run:
+  run.cmd -ServeApk
+
+After running, this file will be updated with a LAN URL like:
+  http://192.168.x.x:8090/app-debug.apk
